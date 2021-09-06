@@ -8,7 +8,7 @@ class HelloResource {
   private cred : ChannelCredentials
 
   constructor(){
-    const rootCrt = readFileSync('./src/key/ca.crt')
+    const rootCrt = readFileSync('/usr/src/app/node_app/src/key/ca.crt')
     this.cred = credentials.createSsl(rootCrt)
     const grpcURL = 'localhost:50051';
     this.client = new HelloResourceClient(grpcURL, this.cred,{})

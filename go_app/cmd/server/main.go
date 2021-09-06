@@ -16,8 +16,8 @@ import (
 
 var (
 	port    = ":50051"
-	crtFile = "./devtools/key/ca.crt"
-	keyFile = "./devtools/key/ca.key"
+	crtFile = "/usr/src/app/go_app/devtools/key/ca.crt"
+	keyFile = "/usr/src/app/go_app/devtools/key/ca.key"
 )
 
 func main() {
